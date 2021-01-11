@@ -11,6 +11,7 @@ export class AppComponent {
   countStart = 0;
   name = 'kevin';
   city = 'Atlanta';
+  age = 30;
 
   myChildMess(event) {
     this.childCom = event;
