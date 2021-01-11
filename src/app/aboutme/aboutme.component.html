@@ -1,0 +1,10 @@
+<p>aboutme works!</p>
+<button (click)="myChildMess($event)">click me</button>
+<button (click)="myCount($event)">Count</button>
+<p>{{ pm }}</p>
+<mat-list role="list">
+    <mat-list-item role="listitem"><a routerLink="items/item1">Item 1</a></mat-list-item>
+    <mat-list-item role="listitem"><a routerLink="items/item2">Item 2</a></mat-list-item>
+    <mat-list-item role="listitem"><a routerLink="items/item3">Item 3</a></mat-list-item>
+</mat-list>
+<router-outlet></router-outlet>

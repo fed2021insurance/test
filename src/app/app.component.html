@@ -1,0 +1,20 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <a routerLink="/">Home</a>
+    <br>
+    <a routerLink="aboutme">About Me</a>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <h1>My main app component</h1>
+    <p>{{ parentCom }}</p><p>{{ childCom }}</p><p>{{ countStart }}</p>
+    
+    <router-outlet></router-outlet>
+    
+    <app-aboutme id="nnn" 
+      [pm]="parentCom" 
+      (cm)="myChildMess($event)"
+      (counter)="myCount($event)"></app-aboutme>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
