@@ -20,4 +20,8 @@ export class AppComponent {
   myCount(event) {
     this.countStart = event;
   }
+
+  playing() {
+    console.log("hello")
+  }
 }
