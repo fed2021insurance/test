@@ -10,6 +10,7 @@ export class AppComponent {
   childCom = '';
   countStart = 0;
   name = 'kevin';
+  city = 'Atlanta';
 
   myChildMess(event) {
     this.childCom = event;
